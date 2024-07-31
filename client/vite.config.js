@@ -8,8 +8,8 @@ export default defineConfig({
     port: 3211,
     open: true,
     proxy: {
-      '/api': {
-        target: 'http://localhost:3211',
+      '/graphql': {
+        target: 'http://localhost:3210',
         secure: false,
         changeOrigin: true
       }
